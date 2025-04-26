@@ -5,7 +5,7 @@
 
 ---
 
-<img src="./screenshot.jpeg" alt="Agro BiM Agro-shopp" style="max-width:100%; border-radius:10px;" />
+<img src="frontend/public/screenshot.jpeg" alt="Agro BiM Agro-shopp" style="max-width:100%; border-radius:10px;" />
 
 ---
 
@@ -24,10 +24,6 @@ Ova platforma omogućava:
 
 ---
 
-## 📂 Struktura projekta
-
-
----
 
 ## 📂 Struktura projekta
 /backend → Laravel 12 API (Agro BiM backend) /frontend → React aplikacija (Agro-shopp frontend)
