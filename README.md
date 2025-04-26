@@ -5,7 +5,7 @@
 
 ---
 
-<img src="frontend/public/screenshot.jpeg" alt="Agro BiM Agro-shopp" style="max-width:100%; border-radius:10px;" />
+<img src="frontend/public/images/screenshot.jpeg" alt="Agro BiM Agro-shopp" style="max-width:100%; border-radius:10px;" />
 
 ---
 
