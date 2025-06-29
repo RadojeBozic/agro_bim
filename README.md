@@ -1,133 +1,33 @@
-# Agro BiM - Agro-shopp platforma
-
-![Built with Laravel](https://img.shields.io/badge/Built%20with-Laravel-red)
-![React Project](https://img.shields.io/badge/Frontend-React-blue)
-
----
-
-<img src="frontend/public/images/screenshot.jpeg" alt="Agro BiM Agro-shopp" style="max-width:100%; border-radius:10px;" />
-
----
-
-## 🇷🇸 Srpski opis
-
-Dobrodošli u projekat **Agro BiM / Agro-shopp**!  
-Ova platforma omogućava:
-
-- ✅ Registraciju i prijavu korisnika (kupci, admini)
-- ✅ Postavljanje, uređivanje i brisanje proizvoda
-- ✅ Organizaciju proizvoda po poljoprivrednim rubrikama i podrubrikama
-- ✅ Pretragu proizvoda po imenu i opisu
-- ✅ Isticanje proizvoda na početnu stranicu
-- ✅ Admin panel za upravljanje proizvodima
-- ✅ Moderan, responzivan dizajn
-
----
+# 👋 Hello developer!
+This is one of the many templates available from W3schools. Check our [tutorials for frontend development](https://www.w3schools.com/where_to_start.asp) to learn the basics of [HTML](https://www.w3schools.com/html/default.asp) and [CSS](https://www.w3schools.com/css/default.asp). 🦄
 
 
-## 📂 Struktura projekta
-/backend → Laravel 12 API (Agro BiM backend) /frontend → React aplikacija (Agro-shopp frontend)
+## 🏗 What's next?
+Customize this template to make it your own. Remember to make your layout responsive - if you want your site to look good on smaller screens like mobile. 
+
+## 🎨 Where to find everything
+
+- **External style sheet:** The template you chose is built with [W3CSS](https://www.w3schools.com/w3css/default.asp), placed in an external style sheet. You can either replace that style sheet - or keep it simple and leave it in.  
+	[Go to tutorial about W3CSS](https://www.w3schools.com/w3css/default.asp)
+
+- **Fonts:** Explore the options from **Google fonts** and add your favorite.  
+	[Go to tutorial about fonts](https://www.w3schools.com/w3css/w3css_fonts_google.asp)
+
+- **Icons:** Icons are from **Fontawesome**. You can reuse those and choose other free icons from their free library.  
+	[Go to tutorial about Fontawesome](https://www.w3schools.com/icons/fontawesome5_intro.asp)
+
+- **Images:** Replace the images by uploading your own and updating their URLs.  
+	[Go to article about how to upload files](https://support.w3schools.com/hc/en-gb/articles/4410414928017)
+
+> ⚡️ **Tip:** [Set up Google Analytics](https://www.w3schools.com/howto/howto_google_analytics.asp) to get valuable insights about your space and visitors. 
 
 
----
-
-## 🛠 Tehnologije korišćene
-
-- Frontend: **React**, **Bootstrap**, **Axios**
-- Backend: **Laravel 12**, **MySQL**
-- Autentifikacija: **Laravel Sanctum**
-
----
-
-## 🚀 Pokretanje projekta
-
-### Backend (Laravel)
-
-```bash
-cd backend
-cp .env.example .env
-composer install
-php artisan key:generate
-php artisan migrate --seed
-php artisan storage:link
-php artisan serve
-
-### Frontend (React)
-
-cd frontend
-npm install
-npm start
-
-#### Frontend će se pokrenuti na / Frontend will be available at:
-
-http://localhost:3000
-
-#### Backend na / Backend will be running at:
-
-http://127.0.0.1:8000
-
-🧩 Planirane funkcionalnosti
-✅ Korpa i porudžbine
-
-✅ Plaćanje i dostava
-
-✅ Višekriterijumsko filtriranje (akcija, organski proizvod, dostava...)
-
-✅ Višejezičnost (srpski/engleski interfejs)
-
-📜 Licenca
-Sva prava zadržana © 2025 Agro BiM
+### ⛑ Need support?
+[Join our Discord community](https://discord.gg/6Z7UaRbUQM) and ask questions in the **#spaces-general** channel.
 
 
-🇬🇧 English description
-Agro BiM - Agro-shopp platform
-Welcome to the Agro BiM / Agro-shopp project!
-This platform enables:
-
-✅ User registration and login (buyers, admins)
-
-✅ Posting, editing, and deleting products
-
-✅ Product organization by agricultural sectors and subcategories
-
-✅ Search products by name and description
-
-✅ Highlight featured products on homepage
-
-✅ Admin panel for product management
-
-✅ Modern, responsive design
-
-📂 Project structure
-
-/backend   → Laravel 12 API (Agro BiM backend)
-/frontend  → React app (Agro-shopp frontend)
+### 🚀 Upgrade to Pro
+[Upgrade your account](https://billing.w3schools.com/products/spaces) to boost your space and take your projects to the next level; more requests, more storage and more power for up to 10 spaces.
 
 
-🚀 Running the project
-Backend (Laravel)
-cd backend
-cp .env.example .env
-composer install
-php artisan key:generate
-php artisan migrate --seed
-php artisan storage:link
-php artisan serve
-
-Frontend (React)
-cd frontend
-npm install
-npm start
-
-🧩 Planned features
-
-✅ Shopping cart and orders
-
-✅ Payment and delivery integration
-
-✅ Advanced filtering (on sale, organic, delivery available...)
-
-✅ Multilanguage (Serbian/English interface)
-
-📜 License
-All rights reserved © 2025 Agro BiM
+Happy learning!

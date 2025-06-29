@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vesti iz Agrara - AGRO BiM</title>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-highway.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+    .news-section {
+      padding: 50px;
+      background-color: #f7f7f7;
+    }
+
+    .news-card {
+      background: white;
+      margin-bottom: 30px;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
+    }
+
+    .news-card h3 {
+      color: #004d40;
+    }
+
+    .news-card p {
+      color: #333;
+    }
+
+    .news-card button {
+      margin-top: 10px;
+      background-color: #007BFF;
+      color: white;
+      border: none;
+      padding: 8px 16px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .news-card button:hover {
+      background-color: #0056b3;
+    }
+
+    .news-details {
+      background-color: #f1f1f1;
+      padding: 15px;
+      border-left: 4px solid #007BFF;
+      border-radius: 5px;
+      margin-top: 10px;
+      animation: fadeIn 0.5s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    .back-link {
+      margin: 30px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="w3-container w3-padding w3-highway-blue">
+    <h1><i class="fa fa-newspaper-o"></i> Najnovije vesti iz agrara</h1>
+  </div>
+
+  <section class="news-section w3-container">
+
+    <!-- Vest 1 -->
+    <div class="news-card">
+      <h3>📣 Država isplaćuje podsticaje za tov u 2025. godini u vrednosti 4,5 milijardi dinara</h3>
+      <p>🐮🐷🐑 Ministarstvo poljoprivrede, šumarstva i vodoprivrede objavilo je Javni poziv za podnošenje zahteva za ostvarivanje prava na podsticaje
+         u stočarstvu za tov junadi, svinja, jagnjadi i jaradi za 2025. godinu.</p>
+      <button onclick="toggleDetails('statistika')">Pročitaj više</button>
+      <div id="statistika" class="news-details" style="display:none;">
+        <p>Svi registrovani nosioci komercijalnih porodičnih poljoprivrednih gazdinstava, kao i preduzetnici i pravna lica,
+                   mogu podneti zahteve u periodu od 21. maja do 20. juna 2025. godine</p>
+        <p>Podsticaji su utvrđeni u sledećim iznosima:</p>
+        <ul>
+          <li>22.000 dinara po tovnom junetu🐄,</li>
+          <li>3.000 dinara po tovnom jagnjetu ili jaretu🐏,</li>
+          <li>1.500 dinara po tovnoj svinji🐖.</li>
+        </ul>
+        <p>Agro BiM vam nudi kompletnu podršku – od podnošenja do realizacije zahteva. 
+          Dovoljno je da popunite kontakt formu, zakažete sastanak ili nas pozovete. Vaš Agro BiM.</p>
+      </div>
+    </div>
+    
+    <!-- Vest 2 -->
+    <div class="news-card">
+      <h3>🐝 🍯 Objavljen Javni poziv za podsticaje u stočarstvu po košnici pčela za 2025. godinu</h3>
+      <p>Podnošenje zahteva traje od 20. maja do 20. juna 2025. godine.</p>
+      <button onclick="toggleDetails('organska')">Pročitaj više</button>
+      <div id="organska" class="news-details" style="display:none;">
+        <p>Pravo na podsticaje u iznosu od 1.000 dinara po košnici pčela mogu da ostvare pravna lica, preduzetnici i fizička lica – nosioci 
+          komercijalnog porodičnog poljoprivrednog gazdinstva, koji ispunjavaju sledeće uslove:</p>
+        <ul>
+          <li>Da su upisani u Registar poljoprivrednih gazdinstava i da su u aktivnom statusu;</li>
+          <li>Da su za tekuću godinu obnovili registraciju u Registru;</li>
+          <li>Da su prijavili pčelinja društva (košnice) i broj gazdinstva sa životinjama (HID);</li>
+          <li>Da su izvršili obeležavanje i registraciju pčelinjih društava u Centralnoj bazi podataka;</li>
+          <li>Da su vlasnici košnica ili da je vlasnik član njihovog porodičnog gazdinstva;</li>
+          <li>Da su u zakonskom roku prijavili stanje pčelinjaka i košnica ovlašćenom obeleživaču.</li>
+        </ul>
+        <p>Podsticaji se odobravaju za najmanje 20, a najviše 1.000 košnica po podnosiocu.</p>
+        <p>Agro BiM vam nudi kompletnu podršku – od podnošenja do realizacije zahteva.</p>
+      </div>
+    </div>
+
+    <!-- Vest 3 -->
+    <div class="news-card">
+      <h3>📢 Podnošenje zahteva za povrat akciza za gorivo</h3>
+      <p>Povraćaj je moguće ostvariti u iznosu od 50 dinara po litru do 100 litara po hektaru prijavljene površine, do 100 hektara</p>
+      <button onclick="toggleDetails('ipard')">Pročitaj više</button>
+      <div id="ipard" class="news-details" style="display:none;">
+        <p>Da bi podneli zahtev za povrat akcize, potrebno je da poljoprivrednici poseduju fiskalne račune na kojima će, kada je reč o poljoprivrednicima koji su fizička lica,
+           stajati broj poljoprivrednog gazdinstva (BPG) ili JMBG nosioca gazdinstva, odnosno PIB u slučaju da je podnosilac pravno lice, odnosno preduzetnik.</p>
+        <!-- <ul>
+          <li>Nabavka poljoprivredne mehanizacije i opreme</li>
+          <li>Investicije u preradu i marketing</li>
+          <li>Modernizacija proizvodnih kapaciteta</li>
+        </ul> -->
+        <p><!-- Rok za prijavu je 30. maj 2025. Preporučuje se što ranije podnošenje dokumentacije.  -->Naš tim je spreman da vam pomogne u svakom koraku.</p>
+      </div>
+    </div>
+    <!-- Vest 4 -->
+    <div class="news-card">
+      <h3>Subvencionisani krediti: Država obezbeđuje 1,3 milijarde dinara 
+        za povoljno finansiranje poljoprivrede uz kamatu od 0 do 1%</h3>
+      <p>Maksimalan iznos kredita za fizička lica i preduzetnike je 6.000.000 dinara,
+         dok je za pravna lica predviđeno do 18.000.000 dinara.</p>
+      <button onclick="toggleDetails('mladi')">Pročitaj više</button>
+      <div id="mladi" class="news-details" style="display:none;">
+        <p>Ključne pogodnosti obuhvataju i kamatnu stopu od samo 1% za poljoprivrednike iz područja sa otežanim uslovima rada,
+           mlade do 40 godina i žene, kao i za kredite odobrene za razvoj stočarstva koji obuhvata nabavku kvalitetnih priplodnih
+            junica i kvalitetnih priplodnih krava starosti do pet godina. Pogodnosti takođe obuhvataju i kamatu 0% za nabavku
+             đubriva, što predstavlja najpovoljniji model podrške do sada.</p>
+        <p> Zahtevi se podnose direktno bankama sa kojima Ministarstvo ima potpisane ugovore, a krajnji rok za apliciranje
+              je 15. oktobar 2025. godine. Nakon puštanja kredita u tečaj, banka podnosi zahtev za subvenciju kamate Ministarstvu.</p>
+      <!-- <h4>Ko može da se prijavi?</h4>
+       <ul>
+          <li>fizička lica – nosioci aktivnih porodičnih poljoprivrednih gazdinstava;</li>
+          <li>preduzetnici i privredna društva razvrstana kao mikro, mala ili srednja;</li>
+          <li>zemljoradničke zadruge sa najmanje pet aktivnih članova;</li>
+          <li>srednje poljoprivredne škole i</li>
+          <li>crkve i verske zajednice registrovane u skladu sa zakonom.</li>
+        </ul>
+        <p>Agro BiM vam nudi celovitu podršku – od prijave do realizacije zahteva.</p> -->
+      </div>
+    </div>
+
+
+
+  </section>
+
+  <div class="w3-container w3-center back-link">
+    <a href="index.html" class="w3-button w3-round-large w3-highway-blue">
+      <i class="fa fa-arrow-left"></i> Nazad na početnu
+    </a>
+  </div>
+
+  <footer class="w3-container w3-center w3-highway-blue w3-padding">
+    <p>© 2025 AGRO BiM | Vesti iz agrara</p>
+  </footer>
+
+  <!-- Skripta za prikaz/sakrivanje vesti -->
+  <script>
+    function toggleDetails(id) {
+      const el = document.getElementById(id);
+      if (el.style.display === "none") {
+        el.style.display = "block";
+      } else {
+        el.style.display = "none";
+      }
+    }
+  </script>
+
+</body>
+</html>

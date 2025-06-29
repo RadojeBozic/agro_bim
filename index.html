@@ -1,0 +1,512 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="description" content="Agro BiM - Konsultantska podrška za subvencije i ruralni razvoj u Srbiji.">
+    <title>AGRO BiM</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-highway.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="logo2.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body> 
+
+    <section class="navigation w3-metro-light-blue w3-container">
+      <button onclick="goToTop()" id="back-to-top" title="Go to top"><i class="fa fa-toggle-up"></i></button>
+      <nav class="nav-container">
+        <div class="logo w3-padding-large">
+          <img src="logo.png" alt="AGRO BiM logo" style="height:180px;">
+        </div>
+
+
+        <div class="mobile-button">
+          <span style="float: right;" onclick="toggleMobileNavigation()">&#9776;</span>
+        </div>
+        <div class="links">
+          <a href="#about">O NAMA</a> -
+          <a href="#consulting">USLUGE</a> -
+          <a href="#cenovnik">CENOVNIK USLUGA</a> -
+          <a href="faq.html">FAQ (ČESTA PITANJA)</a> -
+          <a href="agro_vesti.html">VESTI</a> -
+          <a href="#links">LINKOVI</a> -
+          <a href="#contact">KONTAKT</a>
+        </div>
+        <div id="mobile-sidenav" class="mobile-links w3-sand">
+          <a href="javascript:void(0)" class="closebtn w3-round" onclick="toggleMobileNavigation()">&times;</a>
+          <a href="#about" onclick="toggleMobileNavigation()">O NAMA</a>
+          <a href="#consulting" onclick="toggleMobileNavigation()">USLUGE</a>
+          <a href="#cenovnik" onclick="toggleMobileNavigation()">CENOVNIK USLUGA</a>
+          <a href="faq.html" onclick="toggleMobileNavigation()">FAQ (ČESTA PITANJA)</a>
+          <a href="agro_vesti.html" onclick="toggleMobileNavigation()">VESTI</a>
+          <a href="#links" onclick="toggleMobileNavigation()">LINKOVI</a>
+          <a href="#contact" onclick="toggleMobileNavigation()">KONTAKT</a>
+        </div>
+      </nav>
+    </section>
+
+    <section class="hero w3-padding-large w3-container fade-in">
+      
+      <h1 style="display: inline;"><span><i class="fa fa-check-square-o"></i></span>AGRO BiM - BRŽE DO SUBVENCIJA I SREDSTAVA PODSTICAJA </h1>
+      <p>Uvek tu za Vas!</p>
+      <a href="#contact" class="w3-button w3-green w3-round-large w3-hover-shadow w3-large">Zakažite sastanak</a>
+
+    </section>
+
+ <section class="about w3-padding-large w3-container" id="about">
+  <div class="particles-wrapper">
+    <div id="particles-about"></div>
+  </div> 
+  <div class="content container w3-round-large">
+    
+    <h2 style="text-align: center;">- Prioritetne usluge -</h2>
+    <!-- <p>Misija Agro BiM-a je da postane vodeća platforma za konsultantsku podršku u poljoprivredi i ruralnom razvoju u Srbiji i regionu.</p>
+    <h3 style="text-align: center;">- O nama -</h3>
+    <p>Agro BiM je pouzdan partner svakom akteru u agrarnom sektoru, kroz podršku pri planiranju, apliciranju i realizaciji projekata finansiranih iz državnih i međunarodnih izvora.</p>
+    <p><strong>Ključni principi:</strong></p>
+    <ul>
+      <li><strong>Stručnost</strong> – tim sastavljen od iskusnih profesionalaca</li>
+      <li><strong>Transparentnost</strong> – jasan proces usluga i komunikacije</li>
+      <li><strong>Digitalna dostupnost</strong> – savremena IT rešenja</li>
+    </ul>
+    <p><strong>Vizija:</strong> Integracija sa sistemima javne uprave, međunarodnim fondovima i ruralnim zajednicama.</p>
+    <p><strong>Dugoročna vizija uključuje:</strong></p> -->
+    <ul>
+      <li>Podnošenje zahteva za podsticaje u biljnoj proizvodnji po hektaru</li>
+      <li>Podnošenje zahteva za  refrakciju akciza za gorivo</li>
+      <li>Podnošenje zahteva za podsticaje u svinjarstvu</li>
+      <li>Podnošenje zahteva za premije za mleko</li>
+      <li>Podnošenje zahteva za podsticaje u govedarstvu</li>
+      <li>Podnošenje zahteva za podsticaje u stočarstvu po košnici pčela</li>
+    </ul>
+        <p> - Agro BiM je pouzdan partner svakom akteru u agrarnom sektoru -</p>
+
+    <!-- <p><strong>Kratkoročni ciljevi (0–12 meseci):</strong></p>
+    <ul>
+      <li>Osnivanje pravnog lica i osnivačkog tima</li>
+      <li>Kreiranje IT infrastrukture: portal, CRM, email sistem</li>
+      <li>Formiranje baze znanja: vodiči, obrasci, konkursi</li>
+      <li>Prva promotivna kampanja i 10–20 realizovanih projekata</li>
+    </ul>
+    <p><strong>Dugoročni ciljevi (1–3 godine):</strong></p>
+    <ul>
+      <li>Mobilna aplikacija za praćenje konkursa</li>
+      <li>Umrežavanje sa opštinama i zadrugama</li>
+      <li>Upotreba veštačke inteligencije za preporuke</li>
+      <li>Finansijska samoodrživost</li>
+    </ul>
+    <p><strong>Ključne usluge:</strong></p>
+    <ul>
+      <li>Priprema dokumentacije: elaborati, biznis planovi, IPARD</li>
+      <li>Konsultantska podrška i analiza konkursa</li>
+      <li>Digitalni alati: kalkulatori, formulari, vodiči</li>
+      <li>Administrativna pomoć: eUprava, status prijava</li>
+      <li>Edukacija: online i terenske obuke</li>
+    </ul>
+    <p>Naš modularni sistem usluga omogućava prilagođavanje korisnicima – od malih gazdinstava do velikih zadruga i opština.</p> -->
+  </div>
+ 
+  
+</section>
+<section>
+
+      <div class="leadership content container w3-margin-top w3-round-large">
+        <h3 style="text-align: center;">- Rukovodioci projekata -</h3>
+        <p style="text-align: center;"><em>"Liderstvo je, pre svega, biti sluga."</em> <!-- <strong>- Miroslav Božić</strong> --></p>
+        <div class="l-cards">
+          <div class="l-card">
+            <div class="circular-portrait">
+              <img src="mirosLav_new2.jpg" alt="Photo Miroslav"/>
+            </div>
+            <h4><strong>Miroslav Božić</strong></h4>
+            <p style="margin-top: 0 !important;">(Strukovni inženjer agroekonomije, suosnivač Agro BiM-a)</p>
+            <div class="icons">
+              <a href="" target="_blank"><span><i class="fa fa-facebook-square"></i></a>
+              <a href="" target="_blank"><span><i class="fa fa-linkedin-square"></i></a>
+              <a href="" target="_blank"><span><i class="fa fa-address-card"></i></a>
+            </div>
+            <p>„Naš zadatak nije samo da pomognemo ljudima da popune formular – naš zadatak je da im otvorimo vrata ka razvoju, da ih osnažimo da razmišljaju kao lideri svojih gazdinstava.
+
+Kroz studije Agro-menadžmenta naučio sam da svaka uspešna investicija u poljoprivredi počinje znanjem, a završava strateškom podrškom.
+
+Agro BiM je tu da upravo to znanje pretoči u uspešne projekte – stručno, pouzdano i posvećeno.”</p>
+          </div>
+          <div class="l-card">
+            <div class="circular-portrait">
+              <img src="bojAna_new2.jpg" alt="Bojana Popić - stručnjak za voćarstvo i vinogradarstvo"/>
+            </div>
+            <h4><strong>Bojana Popić</strong></h4>
+            <p style="margin-top: 0 !important;">(Dipl. ing. poljoprivrede (voćarstvo i vinogradarstvo), suosnivačica Agro BiM-a)</p>
+            <div class="icons">
+              <a href="" target="_blank"><span><i class="fa fa-facebook-square"></i></a>
+              <a href="" target="_blank"><span><i class="fa fa-linkedin-square"></i></a>
+              <a href="" target="_blank"><span><i class="fa fa-address-card"></i></a>
+            </div>
+            <p>„Kao neko ko dolazi direktno iz struke, iz srca proizvodnje, veoma dobro razumem koliko je poljoprivreda ne samo posao – već način života.
+
+Voćari, vinogradari, stočari, povrtari – svi oni imaju svoju viziju, ali im je često potrebna ruka podrške kada dođe vreme za konkurse, projekte i administraciju.
+
+Agro BiM je upravo ta ruka. Mi smo tu da znanje sa terena povežemo sa znanjem iz sistema. I da naši ljudi konačno dobiju ono što zaslužuju.”</p>
+          </div>
+        </div>
+      </div>
+    
+</section>
+
+    <section class="testimonials w3-container w3-panel" style="padding: 50px;" fade-in>
+      
+      <h2 style="text-align: center;">- Neke od priča naših klijenata -</h2>
+      <div class="slideshow-container">
+
+      <div class="mySlides">
+        <p><q><em>Mislim da nam je ovako nešto više nego potrebno. Često i ne znamo šta je to što možemo koristiti od sredstava za podsticaj.</em></q></p>
+        <p class="author"><strong>- Nemanja M., Drenovac</strong></p>
+      </div>
+
+      <div class="mySlides">
+        <p><q><em>Naročito su mi interensantni ovi projekti koje sufinansira EU. Tu je dobrodošla pomoć i podrška ove agencije.</em></q></p>
+        <p class="author"><strong>- Marko K., Ševarice</strong></p>
+      </div>
+
+      <div class="mySlides">
+        <p><q><em>Nadam se da će ova inicijativa zaživeti. Nama poljoprivrednicima baš treba ovakva podrška. </em></q></p>
+        <p class="author"><strong>- Nikola J., Sovljak</strong></p>
+      </div>
+
+      <a class="prev" onclick="plusSlides(-1)">❮</a>
+      <a class="next" onclick="plusSlides(1)">❯</a>
+
+      </div>
+
+      <div class="dot-container">
+        <span class="dot" onclick="currentSlide(1)"></span> 
+        <span class="dot" onclick="currentSlide(2)"></span> 
+        <span class="dot" onclick="currentSlide(3)"></span> 
+      </div>      
+    </section>
+
+  <section id="cenovnik" class="price-section w3-container container consulting content">
+  <h2><i class="fa fa-money"></i> Cenovnik usluga</h2>
+  <div class="price-list">
+    <h3>* Obnova gazdinstva i promena setvene strukture</h3>
+    <ul>
+      <li>1–10ha – 500 RSD</li>
+      <li>10–30ha – 1.000 RSD</li>
+      <li>>30ha – 1.500 RSD</li>
+    </ul>
+
+    <h3>* Podnošenje zahteva za podsticaje u biljnoj proizvodnji po hektaru</h3>
+    <ul>
+      <li>1–10ha – 500 RSD</li>
+      <li>10–30ha – 1.000 RSD</li>
+      <li>>30ha – 2.000 RSD</li>
+    </ul>
+
+    <h3>* Prihvatanje rešenja i odricanje od žalbe</h3>
+    <ul>
+      <li>Po zahtevu – 500 RSD</li>
+    </ul>
+
+    <h3>* Podnošenje zahteva za refrakciju akciza za gorivo</h3>
+    <ul>
+      <li>Po računu – 100 RSD</li>
+    </ul>
+
+    <h3>* Podnošenje zahteva za podsticaje u stočarstvu, za tov junadi; u govedarstvu
+      (umatičene i neumatičene krave i priplodne junice)</h3>
+    <ul>
+      <li>Po komadu – 500 RSD</li>
+    </ul>
+
+    <h3>* Podnošenje zahteva za podsticaje u stočarstvu, za muzne krave</h3>
+    <ul>
+      <li>Po komadu – 100 RSD</li>
+    </ul>
+
+    <h3>* Podnošenje zahteva za podsticaje u stočarstvu, za tov krmača</h3>
+    <ul>
+      <li>Po komadu – 100 RSD</li>
+    </ul>
+    
+     <h3>* Podnošenje zahteva za podsticaje u stočarstvu, za tov svinja</h3>
+    <ul>
+      <li>Po komadu – 50 RSD</li>
+    </ul>
+
+    <h3>* Podnošenje zahteva za podsticaje u stočarstvu, za tov ovaca, jagnjadi i jaradi</h3>
+    <ul>
+      <li>Po komadu – 100 RSD</li>
+    </ul>
+
+    <h3>* Podnošenje zahteva za podsticaje u stočarstvu, po košnici pčela</h3>
+    <ul>
+      <li>Po košnici – 50 RSD</li>
+    </ul>
+    <h4> <i>Cenovnik važi od 25.05.2025.</i></h4>
+  </div>
+</section>
+
+
+    <section id="consulting" class="w3-container container consulting content" fade-in>
+      
+      <h2 style="text-align: center;">- Šta radimo? -</h2>
+      <div class="c-card w3-margin-top">
+        <p>Priprema dokumentacije: elaborati, biznis planovi, aplikacioni paketi za IPARD, nacionalne i lokalne konkurse</p>
+      </div>
+      <div class="c-card c-card-right w3-margin-top">
+        <p>Konsultantska podrška: analiza uslova konkursa, vođenje korisnika kroz proces</p>
+      </div>
+      <div class="c-card w3-margin-top">        
+        <p>Digitalni alati: online kalkulatori, formulari, vodiči, elektronska arhiva</p>
+      </div>
+      <div class="c-card  c-card-right w3-margin-top">
+        <p>Administrativna pomoć: kreiranje naloga na eUpravi, praćenje statusa prijava</p>
+      </div>
+      <div class="c-card w3-margin-top">
+        <p>Edukacija korisnika: online i terenske obuke, uputstva za samostalno apliciranje</p>
+      </div>
+      <div class="c-card  c-card-right w3-margin-top">
+        <p>Ova raznovrsna i modularna struktura usluga omogućava Agro BiM-u da se prilagodi različitim korisnicima – od malih porodičnih gazdinstava do velikih zadruga i ruralnih opština </p>
+      </div>
+    </section>
+
+    <section class="w3-panel w3-container content why-us" style="padding: 50px;" fade-in>
+      <h2 style="text-align: center;">- Zašto izabrati nas? -</h2>
+      <div class="container boxes">
+        <div class="box w3-round-large">
+          Štedimo Vaše vreme
+        </div>
+        <div class="box w3-round-large">
+          Pratimo sve domaće i međunarodne konkurse za Vas
+        </div>
+        <div class="box w3-round-large">
+          Vršimo izradu sve potrebne dokumentacije
+        </div>
+        <div class="box w3-round-large">
+          100% pouzdani
+        </div>
+        <div class="box w3-round-large" style="background-color: rgb(153, 255, 187);">
+          Plaćate naše usluge po realizovanom poslu
+        </div>
+      </div>
+    </section>
+
+    <section class="contact w3-container contact" id="contact" fade-in>
+      <div class="short-contact">
+        <h2>- Kontakt - </h2>
+        <div class="w3-large contact-info">
+          <i class="fa fa-address-card"></i><span style="margin-left:10px;"><a href="https://www.google.com/maps/place/%D0%9A%D0%B0%D1%80%D0%B0%D1%92%D0%BE%D1%80%D1%92%D0%B5%D0%B2%D0%B0+12,+%D0%A8%D0%B0%D0%B1%D0%B0%D1%86/@44.7559516,19.6923799,17z/data=!3m1!4b1!4m5!3m4!1s0x475bcae4a8156207:0x11367e845b937fca!8m2!3d44.7559478!4d19.6949495?entry=ttu&g_ep=EgoyMDI1MDQwNi4wIKXMDSoJLDEwMjExNDUzSAFQAw%3D%3D" target="_blank">Šabac, Srbija</a></span><br>
+          <i class="fa fa-envelope"></i><span style="margin-left:10px;"><a href="mailto:agrobim2025@gmail.com">agrobim2025@gmail.com</a></span><br>
+          <i class="fa fa-phone-square"></i><span style="margin-left:10px;"><a href="tel:+381640750381">+381640750381 - Miroslav</a></span><br>
+          <i class="fa fa-phone-square"></i><span style="margin-left:10px;"><a href="tel:+381649545572">+381649545572 - Bojana</a></span><br>
+
+        </div>
+        <h3 class="w3-margin-top">- Pratite nas </h3>
+        <div class="w3-large contact-info">
+          <i class="fa fa-brands fa-instagram"></i><span style="margin-left:10px;"><a href="https://www.instagram.com/agrobim2025/" target="_blank" style="text-decoration: none;">- Instagram</a></span><br>
+          <i class="fa fa-facebook-square"></i><span style="margin-left:10px;"><a href="https://www.facebook.com/people/Agro-bim/61575159872125/" target="_blank" style="text-decoration: none;">- Facebook</a></span><br>
+        </div>
+      </div>
+      <div class="form w3-margin-top">
+        <div class="container w3-round-xlarge">
+          <form id="kontakt-forma" class="w3-highway-blue w3-padding-large w3-round-large"action="https://formspree.io/f/mkgjlwag"
+  method="POST">
+            <h3 style="text-align: center;"><i class="fa fa-check-square-o" style="font-size: 15px;"></i>Kontakt forma/Zakažite sastanak</h3>
+            <label for="fname">Vaše ime</label>
+            <input type="text" id="name" name="name" placeholder="Vaše ime">
+            <label for="lname">Vaš email</label>
+            <input type="text" id="email" name="email" placeholder="Vaš email">
+            <label for="lname">Izaberite datum</label><br>
+            <input type="date" id="date" name="date" placeholder="Izaberite datum"><br><br>
+            <label for="subject">Poruka</label>
+            <textarea id="subject" name="subject" placeholder="Tekst poruke.." style="height:200px"></textarea>
+            <p>Podnošenjem ovog obrasca prihvatate naše <a href="#" target="_blank">uslove privatnosti</a></p><br>
+            <input class="w3-round-large" type="submit" value="Pošalji">
+
+          </form>
+          
+
+        </div>
+        <div id="form-feedback" class="w3-padding w3-pale-green w3-round-large" style="display:none; margin-top:20px;">
+            <i class="fa fa-check-circle"></i> Hvala! Vaša poruka je uspešno poslata.
+          </div>
+      </div>
+    </section>
+
+ <section class="footer w3-container" id="links">
+  <div class="footer-grid">
+
+    <!-- Prva trećina: logo i grb -->
+    <div class="footer-column"> 
+      <img src="logo3.png" alt="AGRO BiM Logo" class="footer-logo"><br>
+      <img src="Grb-Srbije.png" alt="Grb Republike Srbije" class="footer-logo" style="margin-top: 10px;">
+    </div>
+
+    <!-- Srednja trećina: institucije -->
+    <div class="footer-column">
+      <h5>Institucije</h5>
+      <ul>
+        <li><a href="http://www.minpolj.gov.rs/" target="_blank">Ministarstvo poljoprivrede</a></li>
+        <li><a href="https://uap.gov.rs/" target="_blank">Uprava za agrarna plaćanja</a></li>
+        <li><a href="https://privreda.gov.rs/" target="_blank">Ministarstvo privrede</a></li>
+        <li><a href="https://ipard.gov.rs/" target="_blank">IPARD Program</a></li>
+        <li><a href="https://www.apr.gov.rs/" target="_blank">APR</a></li>
+
+      </ul>
+    </div>
+
+    <!-- Treća trećina: zakoni -->
+    <div class="footer-column">
+      <h5>Propisi i zakoni</h5>
+      <ul>
+        <li><a href="https://uap.gov.rs/wp-content/uploads/2021/12/zakon-o-poljoprivredi.pdf" target="_blank">Zakon o poljoprivredi</a></li>
+        <li><a href="https://uap.gov.rs/dokumenti/dokumenti/zakon-o-podsticajima-u-poljoprivredi-i-ruralnom-razvoju-sl-glasnik-rs-br-10-2013-142-2014-103-2015-101-2016-35-2023-92-2023-i-94-2024/" target="_blank">Zakon o podsticajima</a></li>
+        <li><a href="https://uap.gov.rs/wp-content/uploads/2024/02/Pravilnik-IPARD-III.pdf" target="_blank">Zakon o IPARD-u</a></li>
+      </ul>
+    </div>
+
+  </div>
+</section>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    particlesJS("particles-about", {
+      particles: {
+        number: { value: 80, density: { enable: true, value_area: 800 }},
+        color: { value: "#ffffff" },
+        shape: { type: "circle" },
+        opacity: { value: 0.6, random: true },
+        size: { value: 4, random: true },
+        line_linked: {
+          enable: true,
+          distance: 120,
+          color: "#ffffff",
+          opacity: 0.8,
+          width: 3
+        },
+        move: { enable: true, speed: 1 }
+      },
+      interactivity: {
+        detect_on: "canvas",
+        events: {
+          onhover: { enable: true, mode: "repulse" },
+          onclick: { enable: false }
+        }
+      },
+      retina_detect: true
+    });
+  });
+</script>
+
+
+
+  <script async>
+      const backToTop = document.getElementById("back-to-top");
+
+      function toggleMobileNavigation() {
+        const mobileNavigation = document.getElementById("mobile-sidenav");
+        mobileNavigation.classList.toggle('mobile-links-active');
+      }
+
+      function goToTop() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      }
+
+      function scroll() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) backToTop.style.display = "block";
+        else backToTop.style.display = "none";
+      }
+
+      window.onscroll = function() {scroll()};
+  </script>
+  <script async>
+      let slideIndex = 1;
+      showSlides(slideIndex);
+
+      function plusSlides(n) {
+        showSlides(slideIndex += n);
+      }
+
+      function currentSlide(n) {
+        showSlides(slideIndex = n);
+      }
+
+      function showSlides(n) {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        let dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {slideIndex = 1}    
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";  
+        dots[slideIndex-1].className += " active";
+      }
+  </script>
+  <script>
+  const heroSection = document.querySelector(".hero");
+  const heroImages = [
+    "agro-bim/images/agro-bim_setva1.jpg",
+    "agro-bim/images/agro-bim_setva2.jpg",
+    "agro-bim/images/agro-bim_zetva1.jpg",
+    "agro-bim/images/agro-bim_zetva2.jpg",
+    "agro-bim/images/agro-bim_jesen1.jpg",
+    "agro-bim/images/agro-bim_jesen2.jpg",
+    "agro-bim/images/agro-bim_zima1.jpg",
+    "agro-bim/images/agro-bim_zima2.jpg"
+  ];
+  let currentImageIndex = 0;
+
+  function changeHeroBackground() {
+    heroSection.style.backgroundImage = `url('${heroImages[currentImageIndex]}')`;
+    currentImageIndex = (currentImageIndex + 1) % heroImages.length;
+  }
+
+  // Start the slideshow
+  changeHeroBackground("agro-bim/images/agro-bim_zima2.jpg"); // inicijalna slika
+  setInterval(changeHeroBackground, 5000); // na svakih 5 sekundi
+</script>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const form = document.getElementById("kontakt-forma");
+    const feedback = document.getElementById("form-feedback");
+
+    form.addEventListener("submit", function (e) {
+      e.preventDefault(); // zaustavi klasični submit
+      const formData = new FormData(form);
+
+      fetch(form.action, {
+        method: "POST",
+        body: formData,
+        headers: {
+          'Accept': 'application/json'
+        }
+      }).then(response => {
+        if (response.ok) {
+          form.reset(); // očisti formu
+          feedback.style.display = "block"; // prikaži poruku
+        } else {
+          alert("Greška prilikom slanja poruke. Pokušajte kasnije.");
+        }
+      }).catch(error => {
+        alert("Došlo je do greške. Pokušajte ponovo.");
+      });
+    });
+  });
+</script>
+
+
+  </body>
+</html>
